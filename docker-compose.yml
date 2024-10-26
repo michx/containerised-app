@@ -1,4 +1,4 @@
-version: "3.3"
+
 services:
   web:
     build:
@@ -12,14 +12,9 @@ services:
     ports:
       - 8000:80
   db:
+    build:
+      context: ./db
+      dockerfile: Dockerfile
     container_name: mysql
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    environment: 
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cdweb
-      MYSQL_USER: maroine
-      MYSQL_PASSWORD: maroine
     ports:
       - 6033:3306

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    io.service: web
+  name: web
+spec:
+  ports:
+    - name: "8000"
+      port: 8000
+      targetPort: 80
+  selector:
+    io.service: web

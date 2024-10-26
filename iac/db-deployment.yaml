@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    io.service: db
+  name: db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: db
+  template:
+    metadata:
+      labels:
+        io.network/containerised-app-default: "true"
+        io.service: db
+    spec:
+      containers:
+        - image: db
+          name: mysql
+          ports:
+            - containerPort: 3306
+              hostPort: 6033
+              protocol: TCP
+      restartPolicy: Always

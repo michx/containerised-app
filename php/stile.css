@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.sidebar {
+    width: 250px;
+    background: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.logo h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #666;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+    background: #f0f2f5;
+    color: #333;
+    transform: translateX(5px);
+}
+
+.menu-link.active {
+    background: #e3e9ff;
+    color: #1a73e8;
+}
+
+.menu-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-text {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user-section {
+    margin-top: auto;
+    padding: 15px;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e3e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.user-role {
+    color: #666;
+    font-size: 12px;
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.prodotti {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.prodotto {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.prodotto img {
+    max-width: 70%;
+    height: auto;
+}
+
+.prodotto h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.prodotto p {
+    font-size: 1em;
+    color: #555;
+}
+
+.prodotto strong {
+    color: #333;
+    font-size: 1.2em;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+.logo-section {
+    margin-top: 50px;
+    text-align: center; /* Aggiunge il centramento orizzontale */
+}
+
+.logo {
+    width: 150px; /* Riduce la dimensione del logo */
+    height: auto; /* Mantiene le proporzioni */
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-image {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.product-description {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
