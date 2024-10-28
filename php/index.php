@@ -14,7 +14,7 @@ ini_set( 'display_errors', true );
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stile.css">
-    <title>SportWear - Il tuo negozio di abbigliamento sportivo</title>
+    <title>SportWear - Il tuo negozio di abbigliamento sportivo...e non solo!</title>
 </head>
 <body>
     <!-- Inizio Sidebar -->
